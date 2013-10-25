@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+set -x -e
+pushd `dirname $0`/../../src
+export PATH=$PATH:/usr/local/bin
+/usr/bin/env python setup.py build_ext bdist sdist
+popd

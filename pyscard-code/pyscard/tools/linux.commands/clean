@@ -1,0 +1,20 @@
+#! /usr/bin/env bash
+
+set -x
+
+builddir=`dirname $0`/../../src/build/
+if [ -d $builddir ]; then rm -R -f $builddir; fi
+
+distdir=`dirname $0`/../../src/dist/
+if [ -d $distdir ]; then rm -R -f $distdir; fi
+
+manifest=`dirname $0`/../../src/MANIFEST
+if [ -f $manifest ]; then rm -f $manifest; fi
+
+scardpy=`dirname $0`/../../src/smartcard/scard/scard.py
+if [ -f $scardpy ]; then rm -f $scardpy; fi
+
+scardc=`dirname $0`/../../src/smartcard/scard/scard_wrap.c
+if [ -f $scardc ]; then rm -f $scardc; fi
+
+

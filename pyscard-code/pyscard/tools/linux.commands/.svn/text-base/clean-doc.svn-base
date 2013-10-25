@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+
+set -x
+
+epydocdir=`dirname $0`/../../src/smartcard/doc/epydoc
+if [ -d $epydocdir ]; then rm -R -f $epydocdir; fi
+
+docarchive=pyscard-doc.zip
+if [ -f $docarchive ]; then rm -f $docarchive; fi
+
+

@@ -1,0 +1,8 @@
+#! /usr/bin/env bash
+
+set -x
+
+pushd `dirname $0`/../../src
+/usr/bin/env python setup.py build_ext
+su -c "/usr/bin/env python setup.py install"
+popd

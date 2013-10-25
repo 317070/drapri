@@ -1,0 +1,90 @@
+#!/bin/bash
+#
+# Install Script for the HID Global OMNIKEY CCID Smartcard reader series.
+#
+# Version 3.9.0
+# HID Global
+# http://www.hidglobal.com
+#
+
+echo
+echo Installing HID Global OMNIKEY CCID Smartcard reader driver ...
+echo
+
+
+
+#
+# copy the pcsc-shared library to its proper place
+#
+
+  if [ "$1" = "-d" ]; then
+    dropdir=$2
+  else
+    #
+    # check if pcsc-lite is installed
+    #
+    localpcsc=`which pcscd`
+    if [ "${localpcsc}" != "" ]; then
+      echo "PCSC-Lite found: ${localpcsc}"
+      dropdir=`$localpcsc -v | grep usbdropdir | sed 's/^.*usbdropdir=\(.*\) .*$/\1/' | cut -f1 -d' '`
+    else
+      echo "PCSC-Lite is not found in current path!"
+      echo "Retry with appropriate user or go visit"
+      echo "http://alioth.debian.org/projects/pcsclite/"
+      echo "and install the latest version of pcsc-lite."
+    fi
+  fi
+
+  if [ "${dropdir}" = "" ]; then
+    dropdir="/usr/local/pcsc/drivers/"
+  fi
+
+  if [ ! -d "$dropdir" ]; then 
+    mkdir -p $dropdir 
+  fi
+
+ if [ ! -w "$dropdir" ]; then
+    $SUDO=`which sudo`
+ fi
+ # Delete older driver versions
+  rm -rf ${dropdir}/ifdokccid*;
+
+  bundle=`ls -A | grep -e *.bundle`;
+  echo Copying ${bundle} to ${dropdir} ...
+  $SUDO cp -r ./${bundle} ${dropdir}
+
+  if [ -e ./cmrfid.ini ]; then
+    sudo cp ./cmrfid.ini /etc/cmrfid.ini
+    chmod 644 /etc/cmrfid.ini
+  fi  
+
+  if [ -e ./omnikey.ini ]; then
+    sudo cp ./omnikey.ini /etc/omnikey.ini
+    chmod 644 /etc/omnikey.ini
+  fi  
+
+  if [ -e ./z98_omnikey.rules ]; then
+    if [ -e /etc/SuSE-release ]; then
+      cp ./z98_omnikey.rules /etc/udev/rules.d/10-omnikey.rules
+      chmod 644 /etc/udev/rules.d/10-omnikey.rules
+    else
+      cp ./z98_omnikey.rules /etc/udev/rules.d/z98_omnikey.rules
+      chmod 644 /etc/udev/rules.d/z98_omnikey.rules
+    fi
+  elif [ -e ./z98_omnikey_rfid.rules  ]; then
+    if [ -e /etc/SuSE-release ]; then
+      cp ./z98_omnikey_rfid.rules /etc/udev/rules.d/10-omnikey_rfid.rules
+      chmod 644 /etc/udev/rules.d/10-omnikey_rfid.rules
+    else
+      cp ./z98_omnikey_rfid.rules /etc/udev/rules.d/z98_omnikey_rfid.rules
+      chmod 644 /etc/udev/rules.d/z98_omnikey_rfid.rules
+    fi
+  fi
+
+  if [ -e ./ok_pcscd_hotplug.sh  ]; then
+    cp ./ok_pcscd_hotplug.sh /lib/udev/ok_pcscd_hotplug.sh
+    chmod 744 /lib/udev/ok_pcscd_hotplug.sh
+  fi
+
+echo
+echo Installation finished!

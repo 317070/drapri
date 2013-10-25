@@ -1,0 +1,91 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+	Version="10.0"
+	VendorName="SlickEdit"
+	WorkingDir=".">
+	<Config
+		Name="Release"
+		OutputFile=""
+		CompilerConfigName="Latest Version">
+		<Menu>
+			<Target
+				Name="Build"
+				MenuCaption="&amp;Build"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%wp"
+				ClearProcessBuffer="1">
+				<Exec CmdLine="../macosx.darwin.commands/build"/>
+			</Target>
+			<Target
+				Name="Rebuild"
+				MenuCaption="&amp;Rebuild"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%wp"
+				ClearProcessBuffer="1">
+				<Exec CmdLine="../macosx.darwin.commands/rebuild"/>
+			</Target>
+			<Target
+				Name="clean"
+				MenuCaption="&amp;clean"
+				RunFromDir="%wp"
+				CaptureOutputWith="ProcessBuffer"
+				ClearProcessBuffer="1">
+				<Exec CmdLine="sudo ../macosx.darwin.commands/clean"/>
+			</Target>
+			<Target
+				Name="doc"
+				MenuCaption="&amp;doc"
+				RunFromDir="%wp"
+				CaptureOutputWith="ProcessBuffer"
+				ClearProcessBuffer="1">
+				<Exec CmdLine="/usr/bin/env python ../commands/build-doc.py"/>
+			</Target>
+			<Target
+				Name="clean-doc"
+				MenuCaption="&amp;clean-doc"
+				RunFromDir="%wp"
+				CaptureOutputWith="ProcessBuffer"
+				ClearProcessBuffer="1">
+				<Exec CmdLine="../macosx.darwin.commands/clean-doc"/>
+			</Target>
+			<Target
+				Name="install"
+				MenuCaption="&amp;install"
+				RunFromDir="%wp"
+				CaptureOutputWith="ProcessBuffer"
+				ClearProcessBuffer="1">
+				<Exec CmdLine="../macosx.darwin.commands/install"/>
+			</Target>
+			<Target
+				Name="uninstall"
+				MenuCaption="&amp;uninstall"
+				CaptureOutputWith="ProcessBuffer"
+				ClearProcessBuffer="1"
+				RunFromDir="%wp">
+				<Exec CmdLine="sudo /usr/bin/env python ../commands/uninstall.py"/>
+			</Target>
+			<Target
+				Name="run"
+				MenuCaption="&amp;run"
+				RunFromDir="%p"
+				CaptureOutputWith="ProcessBuffer"
+				ClearProcessBuffer="1">
+				<Exec CmdLine="python %f"/>
+			</Target>
+		</Menu>
+	</Config>
+	<Files>
+		<Folder
+			Name="commands"
+			Filters="">
+			<F N="../commands/build-doc.py"/>
+			<F N="../macosx.darwin.commands/build"/>
+			<F N="../macosx.darwin.commands/clean"/>
+			<F N="../macosx.darwin.commands/clean-doc"/>
+			<F N="../macosx.darwin.commands/rebuild"/>
+			<F N="../commands/uninstall.py"/>
+		</Folder>
+	</Files>
+</Project>

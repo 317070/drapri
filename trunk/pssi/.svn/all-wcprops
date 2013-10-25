@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/svn/!svn/ver/54/trunk/pssi
+END
+structure_parser.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/51/trunk/pssi/structure_parser.py
+END
+dumper.py
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/19/trunk/pssi/dumper.py
+END
+pssi.py
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/37/trunk/pssi/pssi.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/12/trunk/pssi/__init__.py
+END
+bruteforce.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/27/trunk/pssi/bruteforce.py
+END
+display.py
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/27/trunk/pssi/display.py
+END
+field_types.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/46/trunk/pssi/field_types.py
+END
+card_interface.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/44/trunk/pssi/card_interface.py
+END
+loop.py
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/27/trunk/pssi/loop.py
+END

@@ -1,0 +1,43 @@
+10
+
+dir
+612
+svn://svn.code.sf.net/p/pyscard/code/trunk/pyscard/tools
+svn://svn.code.sf.net/p/pyscard/code
+
+
+
+2012-04-08T08:54:44.087902Z
+591
+jdaussel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+afec0d47-af30-0410-a19f-fe2ccf33c325
+
+vslick
+dir
+
+macosx.darwin.commands
+dir
+
+linux.commands
+dir
+
+commands
+dir
+
+win32.commands
+dir
+

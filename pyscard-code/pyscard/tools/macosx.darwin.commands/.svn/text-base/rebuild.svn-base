@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+set -x -e
+pushd `dirname $0`
+./clean
+./build
+popd

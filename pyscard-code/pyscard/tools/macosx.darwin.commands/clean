@@ -1,0 +1,43 @@
+#! /usr/bin/env bash
+
+set -x -e
+builddir=`dirname $0`/../../src/build/
+if [ -d $builddir ]; then rm -R -f $builddir; fi
+
+distdir=`dirname $0`/../../src/dist/
+if [ -d $distdir ]; then rm -R -f $distdir; fi
+
+manifest=`dirname $0`/../../src/MANIFEST
+if [ -f $manifest ]; then rm -f $manifest; fi
+
+scardpy=`dirname $0`/../../src/smartcard/scard/scard.py
+if [ -f $scardpy ]; then rm -f $scardpy; fi
+
+scardc=`dirname $0`/../../src/smartcard/scard/scard_wrap.c
+if [ -f $scardc ]; then rm -f $scardc; fi
+
+scardcc=`dirname $0`/../../src/smartcard/scard/scard.c
+if [ -f $scardcc ]; then rm -f $scardcc; fi
+
+testspyc=`dirname $0`/../../src/smartcard/test/*.pyc
+rm -f $testspyc
+
+testscard=`dirname $0`/../../src/smartcard/test/scard/*.pyc
+rm -f $testscard
+
+scardlocal=`dirname $0`/../../src/smartcard/test/scard/local_config.py
+if [ -f $scardlocal ]; then rm -f $scardlocal; fi
+
+testframework=`dirname $0`/../../src/smartcard/test/framework/*.pyc
+rm -f $testframework
+
+scardframeworklocal=`dirname $0`/../../src/smartcard/test/framework/local_config.py
+if [ -f $scardframeworklocal ]; then rm -f $scardframeworklocal; fi
+
+testframeworkpcsc=`dirname $0`/../../src/smartcard/test/frameworkpcsc/*.pyc
+rm -f $testframeworkpcsc
+
+scardframeworkpcsclocal=`dirname $0`/../../src/smartcard/test/frameworkpcsc/local_config.py
+if [ -f $scardframeworkpcsclocal ]; then rm -f $scardframeworkpcsclocal; fi
+
+

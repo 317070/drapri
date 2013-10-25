@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/54/trunk/pssi/plugins/belgian-eid
+END
+final_types.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/54/trunk/pssi/plugins/belgian-eid/final_types.py
+END
+plugin.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/54/trunk/pssi/plugins/belgian-eid/plugin.py
+END
+structures.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/54/trunk/pssi/plugins/belgian-eid/structures.py
+END
+interpreters.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/54/trunk/pssi/plugins/belgian-eid/interpreters.py
+END

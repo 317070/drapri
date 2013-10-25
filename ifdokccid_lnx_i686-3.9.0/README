@@ -1,0 +1,104 @@
+***************************************************************
+
+ Installation instructions for 
+ the HID Global OMNIKEY CCID Smartcard reader series.
+	    
+ Version 3.9.0
+ HID Global
+ http://www.hidglobal.com
+ 
+***************************************************************
+
+------------------------------
+ Products supported
+------------------------------
+* OMNIKEY 1021 USB
+* OMNIKEY 2020
+* OMNIKEY 3020 USB
+* OMNIKEY 3021 USB
+* OMNIKEY 3021 USB
+* OMNIKEY 3620 USB
+* OMNIKEY 3121 USB
+* OMNIKEY 3621 USB
+* OMNIKEY 3621 USB
+* OMNIKEY 3821 USB
+* OMNIKEY 3821 USB
+* OMNIKEY 3821 USB
+* OMNIKEY 4321 USB
+* OMNIKEY 6020 USB
+* OMNIKEY 6121 USB
+* OMNIKEY 6121 USB
+* OMNIKEY 7120 USB
+* OMNIKEY 7121 USB
+* OMNIKEY 8630 USB
+* OMNIKEY 9621 USB
+
+
+------------------------------
+ What you need
+------------------------------
+
+[1] Kernel with USB support either compiled in or as modules
+
+[2] Mounted /usbfs (/usbdevfs)
+    For more detailed informations see http://www.linux-usb.org/
+
+[3] libusb >= Version 1.0.8 available at
+    http://libusb.sourceforge.net/
+
+[4] PCSCLite >= Version 1.5.5 available at 
+    http://www.linuxnet.com/ 
+      and/or 
+    http://alioth.debian.org/projects/pcsclite/
+
+[5] This driver supports our CT-API and our Synchronous API.
+    So, if you like to use one of them, you must download
+    the API in question from http://www.hidglobal.com.
+    
+------------------------------
+What is new in this release ?
+------------------------------
+
+   
+------------------------------
+ Driver Installation
+------------------------------
+
+After you have downloaded the tarball extract it in any directory
+ 
+  # tar -xzvf ifd<driver-package-name>.tar.gz
+
+change to this directory  and run as root user
+  
+  # ./install
+
+This script checks if PCSCLite is installed and then copies 
+the CCID driver bundle to /usr/local/pcsc/drivers directory,
+ which is the default PCSCLite USB driver dropdir. 
+You can change the dropdir by providing another install path 
+to the install script using the option '-d':
+
+  # ./install -d /path/to/my/dropdir
+
+-----------------------------
+ Support
+-----------------------------
+
+Q: What driver version am I using at the moment?
+
+A: You can determine the driver version number by having a look at the PCSCLite
+   bundle directory (usually /usr/local/pcsc/drivers): The bundle name of our 
+   devices drivers contain the driver version number. 
+   The driver is also printing a version string every time a reader is activated 
+   by PCSCLite: This string can be found either in the system log
+   or on the console you started PCSCLite daemon from.
+
+
+Q: I am experiencing problems using smartcard XYZ !
+
+A: Please send an email to our support address eusupport@hidglobal.com containing
+   a description of the chain of events which lead to the misbehavior (reader plug-in/-off, 
+   SC insertion/removal, commands sent to the SC or at least the program used to talk to the SC), 
+   also include the name and ATR of the smartcard, and add the PCSCLite log events (should be written to
+   your system log /var/log/messages or similar). Your systems kernel version and kind of distribution
+   may also be helpful.

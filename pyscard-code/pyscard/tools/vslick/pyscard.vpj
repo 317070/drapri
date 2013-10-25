@@ -1,0 +1,347 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+	Version="10.0"
+	VendorName="SlickEdit"
+	WorkingDir=".">
+	<Config
+		Name="Release"
+		OutputFile=""
+		CompilerConfigName="Latest Version">
+		<Menu>
+			<Target
+				Name="Compile"
+				MenuCaption="&amp;Compile"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveCurrent"
+				RunFromDir="%rw"
+				ClearProcessBuffer="1">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Build"
+				MenuCaption="&amp;Build"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%rw"
+				ClearProcessBuffer="1">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Rebuild"
+				MenuCaption="&amp;Rebuild"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%rw"
+				ClearProcessBuffer="1">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Debug"
+				MenuCaption="&amp;Debug"
+				SaveOption="SaveNone"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Execute"
+				MenuCaption="E&amp;xecute"
+				SaveOption="SaveNone"
+				RunFromDir="%rw">
+				<Exec CmdLine=""/>
+			</Target>
+		</Menu>
+	</Config>
+	<Files>
+		<Folder
+			Name="Source Files"
+			Filters="">
+			<Folder
+				Name="c"
+				Filters="">
+				<F N="../../src/smartcard/scard/gemalto.ver"/>
+				<F N="../../src/smartcard/scard/helpers.c"/>
+				<F N="../../src/smartcard/scard/helpers.h"/>
+				<F N="../../src/smartcard/scard/makefile"/>
+				<F N="../../src/smartcard/scard/memlog.h"/>
+				<F N="../../src/smartcard/scard/PcscDefs.i"/>
+				<F N="../../src/smartcard/scard/PcscTypemaps.i"/>
+				<F N="../../src/smartcard/scard/pcsctypes.h"/>
+				<F N="../../src/smartcard/scard/pyscard-reader.h"/>
+				<F N="../../src/smartcard/scard/scard.def"/>
+				<F N="../../src/smartcard/scard/scard.i"/>
+				<F N="../../src/smartcard/scard/scard.rc"/>
+				<F N="../../src/smartcard/scard/winscarddll.c"/>
+				<F N="../../src/smartcard/scard/winscarddll.h"/>
+			</Folder>
+			<Folder
+				Name="python"
+				Filters="">
+				<Folder
+					Name="smartcard"
+					Filters="">
+					<F N="../../src/smartcard/__init__.py"/>
+					<F N="../../src/smartcard/AbstractCardRequest.py"/>
+					<F N="../../src/smartcard/ATR.py"/>
+					<F N="../../src/smartcard/Card.py"/>
+					<F N="../../src/smartcard/CardConnection.py"/>
+					<F N="../../src/smartcard/CardConnectionDecorator.py"/>
+					<F N="../../src/smartcard/CardConnectionEvent.py"/>
+					<F N="../../src/smartcard/CardConnectionObserver.py"/>
+					<F N="../../src/smartcard/CardMonitoring.py"/>
+					<F N="../../src/smartcard/CardNames.py"/>
+					<F N="../../src/smartcard/CardRequest.py"/>
+					<F N="../../src/smartcard/CardService.py"/>
+					<F N="../../src/smartcard/CardType.py"/>
+					<F N="../../src/smartcard/ClassLoader.py"/>
+					<F N="../../src/smartcard/Exceptions.py"/>
+					<F N="../../src/smartcard/ExclusiveConnectCardConnection.py"/>
+					<F N="../../src/smartcard/ExclusiveTransmitCardConnection.py"/>
+					<F N="../../src/smartcard/guid.py"/>
+					<F N="../../src/smartcard/Observer.py"/>
+					<F N="../../src/smartcard/PassThruCardService.py"/>
+					<F N="../../src/smartcard/ReaderMonitoring.py"/>
+					<F N="../../src/smartcard/Session.py"/>
+					<F N="../../src/smartcard/setup.py"/>
+					<F N="../../src/smartcard/Synchronization.py"/>
+					<F N="../../src/smartcard/System.py"/>
+					<F N="../../src/smartcard/ulist.py"/>
+				</Folder>
+				<Folder
+					Name="smartcard.pcsc"
+					Filters="">
+					<F N="../../src/smartcard/pcsc/__init__.py"/>
+					<F N="../../src/smartcard/pcsc/PCSCCardConnection.py"/>
+					<F N="../../src/smartcard/pcsc/PCSCCardRequest.py"/>
+					<F N="../../src/smartcard/pcsc/PCSCContext.py"/>
+					<F N="../../src/smartcard/pcsc/PCSCExceptions.py"/>
+					<F N="../../src/smartcard/pcsc/PCSCPart10.py"/>
+					<F N="../../src/smartcard/pcsc/PCSCReader.py"/>
+					<F N="../../src/smartcard/pcsc/PCSCReaderGroups.py"/>
+				</Folder>
+				<Folder
+					Name="smartcard.reader"
+					Filters="">
+					<F N="../../src/smartcard/reader/__init__.py"/>
+					<F N="../../src/smartcard/reader/Reader.py"/>
+					<F N="../../src/smartcard/reader/ReaderFactory.py"/>
+					<F N="../../src/smartcard/reader/ReaderGroups.py"/>
+				</Folder>
+				<Folder
+					Name="smartcard.scard"
+					Filters="">
+					<F N="../../src/smartcard/scard/__init__.py"/>
+				</Folder>
+				<Folder
+					Name="smartcard.sw"
+					Filters="">
+					<F N="../../src/smartcard/sw/__init__.py"/>
+					<F N="../../src/smartcard/sw/ErrorChecker.py"/>
+					<F N="../../src/smartcard/sw/ErrorCheckingChain.py"/>
+					<F N="../../src/smartcard/sw/ISO7816_4_SW1ErrorChecker.py"/>
+					<F N="../../src/smartcard/sw/ISO7816_4ErrorChecker.py"/>
+					<F N="../../src/smartcard/sw/ISO7816_8ErrorChecker.py"/>
+					<F N="../../src/smartcard/sw/ISO7816_9ErrorChecker.py"/>
+					<F N="../../src/smartcard/sw/op21_ErrorChecker.py"/>
+					<F N="../../src/smartcard/sw/SWExceptions.py"/>
+				</Folder>
+				<Folder
+					Name="smartcard.util"
+					Filters="">
+					<F N="../../src/smartcard/util/__init__.py"/>
+				</Folder>
+				<Folder
+					Name="smartcard.wx"
+					Filters="">
+					<F N="../../src/smartcard/wx/__init__.py"/>
+					<F N="../../src/smartcard/wx/APDUHexValidator.py"/>
+					<F N="../../src/smartcard/wx/APDUTracerPanel.py"/>
+					<F N="../../src/smartcard/wx/CardAndReaderTreePanel.py"/>
+					<F N="../../src/smartcard/wx/ReaderToolbar.py"/>
+					<F N="../../src/smartcard/wx/SimpleSCardApp.py"/>
+					<F N="../../src/smartcard/wx/SimpleSCardAppEventObserver.py"/>
+					<F N="../../src/smartcard/wx/SimpleSCardAppFrame.py"/>
+				</Folder>
+				<Folder
+					Name="smartcard.pyro"
+					Filters="">
+					<Folder
+						Name="smartcard.pyro.server"
+						Filters="">
+						<F N="../../src/smartcard/pyro/server/__init__.py"/>
+						<F N="../../src/smartcard/pyro/server/PyroDaemon.py"/>
+						<F N="../../src/smartcard/pyro/server/PyroEventServer.py"/>
+						<F N="../../src/smartcard/pyro/server/PyroNameServer.py"/>
+						<F N="../../src/smartcard/pyro/server/RemoteCardConnection.py"/>
+						<F N="../../src/smartcard/pyro/server/RemoteReaderServer.py"/>
+					</Folder>
+					<F N="../../src/smartcard/pyro/__init__.py"/>
+					<F N="../../src/smartcard/pyro/PyroReader.py"/>
+				</Folder>
+			</Folder>
+		</Folder>
+		<Folder
+			Name="Documentation"
+			Filters="">
+			<Folder
+				Name="online"
+				Filters="">
+				<F N="../../src/smartcard/doc/epydoc.cfg"/>
+				<F N="../../src/smartcard/doc/framework-samples.html"/>
+				<F N="../../src/smartcard/doc/index.html"/>
+				<F N="../../src/smartcard/doc/pyscard-usersguide.html"/>
+				<F N="../../src/smartcard/doc/scard-samples.html"/>
+			</Folder>
+			<Folder
+				Name="readmes"
+				Filters="">
+				<F N="../../src/smartcard/ACKS"/>
+				<F N="../../src/smartcard/ChangeLog"/>
+				<F N="../../src/LICENSE"/>
+				<F N="../../src/smartcard/LICENSE"/>
+				<F N="../../src/PKG-INFO"/>
+				<F N="../../src/README"/>
+				<F N="../../src/smartcard/README"/>
+				<F N="../../src/smartcard/TODO"/>
+			</Folder>
+		</Folder>
+		<Folder
+			Name="distutils"
+			Filters="*.ico;*.cur;*.dlg">
+			<F N="../../src/MANIFEST.in"/>
+			<F N="../../src/setup.py"/>
+		</Folder>
+		<Folder
+			Name="Test Files"
+			Filters="">
+			<Folder
+				Name="framework"
+				Filters="">
+				<F N="../../src/smartcard/test/framework/readme.txt"/>
+				<F N="../../src/smartcard/test/framework/testcase_ATR.py"/>
+				<F N="../../src/smartcard/test/framework/testcase_Card.py"/>
+				<F N="../../src/smartcard/test/framework/testcase_CardConnection.py"/>
+				<F N="../../src/smartcard/test/framework/testcase_CardMonitor.py"/>
+				<F N="../../src/smartcard/test/framework/testcase_CardRequest.py"/>
+				<F N="../../src/smartcard/test/framework/testcase_CardService.py"/>
+				<F N="../../src/smartcard/test/framework/testcase_CardType.py"/>
+				<F N="../../src/smartcard/test/framework/testcase_CAtr.py"/>
+				<F N="../../src/smartcard/test/framework/testcase_ErrorChecking.py"/>
+				<F N="../../src/smartcard/test/framework/testcase_ExclusiveCardConnection.py"/>
+				<F N="../../src/smartcard/test/framework/testcase_readergroups.py"/>
+				<F N="../../src/smartcard/test/framework/testcase_readermonitor.py"/>
+				<F N="../../src/smartcard/test/framework/testcase_readermonitorstress.py"/>
+				<F N="../../src/smartcard/test/framework/testcase_readers.py"/>
+				<F N="../../src/smartcard/test/framework/testcase_ulist.py"/>
+				<F N="../../src/smartcard/test/framework/testcase_utils.py"/>
+				<F N="../../src/smartcard/test/framework/testsuite_framework.py"/>
+			</Folder>
+			<Folder
+				Name="framework pcsc"
+				Filters="">
+				<F N="../../src/smartcard/test/frameworkpcsc/readme.txt"/>
+				<F N="../../src/smartcard/test/frameworkpcsc/testcase_pcscreadergroups.py"/>
+				<F N="../../src/smartcard/test/frameworkpcsc/testsuite_frameworkpcsc.py"/>
+			</Folder>
+			<Folder
+				Name="scard"
+				Filters="">
+				<F N="../../src/smartcard/test/scard/readme.txt"/>
+				<F N="../../src/smartcard/test/scard/testcase_getatr.py"/>
+				<F N="../../src/smartcard/test/scard/testcase_getattrib.py"/>
+				<F N="../../src/smartcard/test/scard/testcase_geterrormessage.py"/>
+				<F N="../../src/smartcard/test/scard/testcase_listcards.py"/>
+				<F N="../../src/smartcard/test/scard/testcase_locatecards.py"/>
+				<F N="../../src/smartcard/test/scard/testcase_readergroups.py"/>
+				<F N="../../src/smartcard/test/scard/testcase_transaction.py"/>
+				<F N="../../src/smartcard/test/scard/testsuite_scard.py"/>
+			</Folder>
+			<Folder
+				Name="manual"
+				Filters="">
+				<F N="../../src/smartcard/test/manual/testcase_manualCardRequest.py"/>
+			</Folder>
+			<F N="../../src/smartcard/test/configcheck.py"/>
+		</Folder>
+		<Folder
+			Name="Samples"
+			Filters="">
+			<Folder
+				Name="apdumanager"
+				Filters="">
+				<F N="../../src/smartcard/Examples/wx/apdumanager/apdumanager.py"/>
+				<F N="../../src/smartcard/Examples/wx/apdumanager/SampleAPDUManagerPanel.py"/>
+				<F N="../../src/smartcard/Examples/wx/apdumanager/setup.py"/>
+			</Folder>
+			<Folder
+				Name="simple"
+				Filters="">
+				<F N="../../src/smartcard/Examples/simple/getATR.py"/>
+				<F N="../../src/smartcard/Examples/simple/selectDF_TELECOM.py"/>
+			</Folder>
+			<Folder
+				Name="cardmonitor"
+				Filters="">
+				<F N="../../src/smartcard/Examples/wx/cardmonitor/cardmonitor.py"/>
+				<F N="../../src/smartcard/Examples/wx/cardmonitor/setup.py"/>
+			</Folder>
+			<Folder
+				Name="pcscdiag"
+				Filters="">
+				<F N="../../src/smartcard/Examples/wx/pcscdiag/pcscdiag.py"/>
+			</Folder>
+			<Folder
+				Name="framework samples"
+				Filters="">
+				<F N="../../src/smartcard/Examples/framework/sample_apduTracerInterpreter.py"/>
+				<F N="../../src/smartcard/Examples/framework/sample_CardConnectionDecorator.py"/>
+				<F N="../../src/smartcard/Examples/framework/sample_ConsoleConnectionTracer.py"/>
+				<F N="../../src/smartcard/Examples/framework/sample_CustomCardType.py"/>
+				<F N="../../src/smartcard/Examples/framework/sample_CustomErrorChecker.py"/>
+				<F N="../../src/smartcard/Examples/framework/sample_ErrorChecking.py"/>
+				<F N="../../src/smartcard/Examples/framework/sample_ExclusiveCardConnection.py"/>
+				<F N="../../src/smartcard/Examples/framework/sample_MonitorCards.py"/>
+				<F N="../../src/smartcard/Examples/framework/sample_MonitorCardsAndTransmit.py"/>
+				<F N="../../src/smartcard/Examples/framework/sample_MonitorReaders.py"/>
+				<F N="../../src/smartcard/Examples/framework/sample_toHexString.py"/>
+				<F N="../../src/smartcard/Examples/framework/sample_TransmitCardObserver.py"/>
+			</Folder>
+			<Folder
+				Name="scard samples"
+				Filters="">
+				<F N="../../src/smartcard/Examples/simple/getATR_T1.py"/>
+				<F N="../../src/smartcard/Examples/scard-api/sample_control.py"/>
+				<F N="../../src/smartcard/Examples/scard-api/sample_getATR.py"/>
+				<F N="../../src/smartcard/Examples/scard-api/sample_getAttrib.py"/>
+				<F N="../../src/smartcard/Examples/scard-api/sample_getStatusChange.py"/>
+				<F N="../../src/smartcard/Examples/scard-api/sample_listCards.py"/>
+				<F N="../../src/smartcard/Examples/scard-api/sample_listInterfaces.py"/>
+				<F N="../../src/smartcard/Examples/scard-api/sample_locateCards.py"/>
+				<F N="../../src/smartcard/Examples/scard-api/sample_pinpad.py"/>
+				<F N="../../src/smartcard/Examples/scard-api/sample_readerGroups.py"/>
+				<F N="../../src/smartcard/Examples/scard-api/sample_readers.py"/>
+				<F N="../../src/smartcard/Examples/scard-api/sample_selectDFTelecom.py"/>
+				<F N="../../src/smartcard/Examples/scard-api/sample_transaction.py"/>
+			</Folder>
+			<Folder
+				Name="readerviewer"
+				Filters="">
+				<F N="../../src/smartcard/Examples/wx/readerviewer/readerviewer.py"/>
+				<F N="../../src/smartcard/Examples/wx/readerviewer/setup.py"/>
+			</Folder>
+			<Folder
+				Name="parseATR"
+				Filters="">
+				<F N="../../../contrib/parseATR/parseATR.py"/>
+				<F N="../../../contrib/parseATR/parseATRhtml.py"/>
+				<F N="../../../contrib/parseATR/stress_test.py"/>
+			</Folder>
+		</Folder>
+		<Folder
+			Name="Generated files"
+			Filters="">
+			<F N="../../src/smartcard/scard/scard.c"/>
+			<F N="../../src/smartcard/scard/scard.py"/>
+			<F N="../../src/smartcard/scard/scard_wrap.c"/>
+		</Folder>
+	</Files>
+</Project>

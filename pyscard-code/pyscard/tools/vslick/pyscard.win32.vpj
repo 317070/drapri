@@ -1,0 +1,101 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+	Version="10.0"
+	VendorName="SlickEdit"
+	WorkingDir="."
+	VCSProject="Subversion:">
+	<Config
+		Name="Release"
+		OutputFile=""
+		CompilerConfigName="Latest Version">
+		<Menu>
+			<Target
+				Name="Build"
+				MenuCaption="&amp;Build"
+				RunFromDir="%wp"
+				CaptureOutputWith="ProcessBuffer"
+				ClearProcessBuffer="1">
+				<Exec CmdLine="..\win32.commands\build.bat"/>
+			</Target>
+			<Target
+				Name="Rebuild"
+				MenuCaption="&amp;Rebuild"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%wp"
+				DependsRef="Release"
+				ClearProcessBuffer="1">
+				<Exec CmdLine="..\win32.commands\rebuild.bat"/>
+			</Target>
+			<Target
+				Name="clean"
+				MenuCaption="&amp;clean"
+				RunFromDir="%wp"
+				CaptureOutputWith="ProcessBuffer"
+				ClearProcessBuffer="1">
+				<Exec CmdLine="..\win32.commands\clean.bat"/>
+			</Target>
+			<Target
+				Name="Reinstall"
+				MenuCaption="&amp;Reinstall"
+				RunFromDir="%wp"
+				CaptureOutputWith="ProcessBuffer"
+				ClearProcessBuffer="1">
+				<Exec CmdLine="..\win32.commands\reinstall.bat"/>
+			</Target>
+			<Target
+				Name="Install"
+				MenuCaption="&amp;Install"
+				RunFromDir="%wp"
+				CaptureOutputWith="ProcessBuffer"
+				ClearProcessBuffer="1">
+				<Exec CmdLine="..\win32.commands\install.bat"/>
+			</Target>
+			<Target
+				Name="Uninstall"
+				MenuCaption="&amp;Uninstall"
+				RunFromDir="%wp"
+				CaptureOutputWith="ProcessBuffer"
+				ClearProcessBuffer="1">
+				<Exec CmdLine="..\commands\uninstall.py"/>
+			</Target>
+			<Target
+				Name="doc"
+				MenuCaption="&amp;doc"
+				RunFromDir="%wp"
+				CaptureOutputWith="ProcessBuffer"
+				ClearProcessBuffer="1">
+				<Exec CmdLine="..\commands\build-doc.py"/>
+			</Target>
+			<Target
+				Name="clean-doc"
+				MenuCaption="&amp;clean-doc"
+				RunFromDir="%wp"
+				CaptureOutputWith="ProcessBuffer"
+				ClearProcessBuffer="1">
+				<Exec CmdLine="..\win32.commands\clean-doc.bat"/>
+			</Target>
+			<Target
+				Name="execute"
+				MenuCaption="&amp;execute"
+				CaptureOutputWith="ProcessBuffer">
+				<Exec CmdLine="%f"/>
+			</Target>
+		</Menu>
+	</Config>
+	<Files>
+		<Folder
+			Name="commands"
+			Filters="*.bat">
+			<F N="../commands/build-doc.py"/>
+			<F N="../win32.commands/build.bat"/>
+			<F N="../win32.commands/clean-doc.bat"/>
+			<F N="../win32.commands/clean.bat"/>
+			<F N="../win32.commands/install.bat"/>
+			<F N="../win32.commands/rebuild.bat"/>
+			<F N="../win32.commands/reinstall.bat"/>
+			<F N="../win32.commands/set-pythondebug-env.bat"/>
+			<F N="../commands/uninstall.py"/>
+		</Folder>
+	</Files>
+</Project>

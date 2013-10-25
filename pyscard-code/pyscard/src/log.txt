@@ -1,0 +1,93 @@
+running install
+running build
+running build_py
+creating build
+creating build/lib.linux-i686-2.7
+creating build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/CardConnection.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/CardConnectionObserver.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/Card.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/CardRequest.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/guid.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/Exceptions.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/CardNames.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/__init__.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/Observer.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/ClassLoader.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/CardConnectionEvent.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/Session.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/System.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/ATR.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/AbstractCardRequest.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/CardConnectionDecorator.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/ulist.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/ExclusiveConnectCardConnection.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/Synchronization.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/CardType.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/CardMonitoring.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/PassThruCardService.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/ExclusiveTransmitCardConnection.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/ReaderMonitoring.py -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/CardService.py -> build/lib.linux-i686-2.7/smartcard
+creating build/lib.linux-i686-2.7/smartcard/pcsc
+copying ./smartcard/pcsc/PCSCExceptions.py -> build/lib.linux-i686-2.7/smartcard/pcsc
+copying ./smartcard/pcsc/PCSCContext.py -> build/lib.linux-i686-2.7/smartcard/pcsc
+copying ./smartcard/pcsc/__init__.py -> build/lib.linux-i686-2.7/smartcard/pcsc
+copying ./smartcard/pcsc/PCSCCardRequest.py -> build/lib.linux-i686-2.7/smartcard/pcsc
+copying ./smartcard/pcsc/PCSCReader.py -> build/lib.linux-i686-2.7/smartcard/pcsc
+copying ./smartcard/pcsc/PCSCCardConnection.py -> build/lib.linux-i686-2.7/smartcard/pcsc
+copying ./smartcard/pcsc/PCSCReaderGroups.py -> build/lib.linux-i686-2.7/smartcard/pcsc
+copying ./smartcard/pcsc/PCSCPart10.py -> build/lib.linux-i686-2.7/smartcard/pcsc
+creating build/lib.linux-i686-2.7/smartcard/reader
+copying ./smartcard/reader/ReaderFactory.py -> build/lib.linux-i686-2.7/smartcard/reader
+copying ./smartcard/reader/ReaderGroups.py -> build/lib.linux-i686-2.7/smartcard/reader
+copying ./smartcard/reader/Reader.py -> build/lib.linux-i686-2.7/smartcard/reader
+copying ./smartcard/reader/__init__.py -> build/lib.linux-i686-2.7/smartcard/reader
+creating build/lib.linux-i686-2.7/smartcard/scard
+copying ./smartcard/scard/__init__.py -> build/lib.linux-i686-2.7/smartcard/scard
+copying ./smartcard/scard/scard.py -> build/lib.linux-i686-2.7/smartcard/scard
+creating build/lib.linux-i686-2.7/smartcard/sw
+copying ./smartcard/sw/ISO7816_4ErrorChecker.py -> build/lib.linux-i686-2.7/smartcard/sw
+copying ./smartcard/sw/SWExceptions.py -> build/lib.linux-i686-2.7/smartcard/sw
+copying ./smartcard/sw/ErrorChecker.py -> build/lib.linux-i686-2.7/smartcard/sw
+copying ./smartcard/sw/op21_ErrorChecker.py -> build/lib.linux-i686-2.7/smartcard/sw
+copying ./smartcard/sw/__init__.py -> build/lib.linux-i686-2.7/smartcard/sw
+copying ./smartcard/sw/ISO7816_4_SW1ErrorChecker.py -> build/lib.linux-i686-2.7/smartcard/sw
+copying ./smartcard/sw/ISO7816_8ErrorChecker.py -> build/lib.linux-i686-2.7/smartcard/sw
+copying ./smartcard/sw/ISO7816_9ErrorChecker.py -> build/lib.linux-i686-2.7/smartcard/sw
+copying ./smartcard/sw/ErrorCheckingChain.py -> build/lib.linux-i686-2.7/smartcard/sw
+creating build/lib.linux-i686-2.7/smartcard/util
+copying ./smartcard/util/__init__.py -> build/lib.linux-i686-2.7/smartcard/util
+creating build/lib.linux-i686-2.7/smartcard/wx
+copying ./smartcard/wx/SimpleSCardAppEventObserver.py -> build/lib.linux-i686-2.7/smartcard/wx
+copying ./smartcard/wx/APDUHexValidator.py -> build/lib.linux-i686-2.7/smartcard/wx
+copying ./smartcard/wx/__init__.py -> build/lib.linux-i686-2.7/smartcard/wx
+copying ./smartcard/wx/CardAndReaderTreePanel.py -> build/lib.linux-i686-2.7/smartcard/wx
+copying ./smartcard/wx/SimpleSCardAppFrame.py -> build/lib.linux-i686-2.7/smartcard/wx
+copying ./smartcard/wx/APDUTracerPanel.py -> build/lib.linux-i686-2.7/smartcard/wx
+copying ./smartcard/wx/SimpleSCardApp.py -> build/lib.linux-i686-2.7/smartcard/wx
+copying ./smartcard/wx/ReaderToolbar.py -> build/lib.linux-i686-2.7/smartcard/wx
+copying ./smartcard/ACKS -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/ChangeLog -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/LICENSE -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/README -> build/lib.linux-i686-2.7/smartcard
+copying ./smartcard/TODO -> build/lib.linux-i686-2.7/smartcard
+creating build/lib.linux-i686-2.7/smartcard/wx/resources
+copying ./smartcard/wx/resources/reader.ico -> build/lib.linux-i686-2.7/smartcard/wx/resources
+copying ./smartcard/wx/resources/smartcard.ico -> build/lib.linux-i686-2.7/smartcard/wx/resources
+running build_ext
+building 'smartcard.scard._scard' extension
+swigging smartcard/scard/scard.i to smartcard/scard/scard_wrap.c
+swig -python -outdir smartcard/scard -DPCSCLITE -o smartcard/scard/scard_wrap.c smartcard/scard/scard.i
+creating build/temp.linux-i686-2.7
+creating build/temp.linux-i686-2.7/smartcard
+creating build/temp.linux-i686-2.7/smartcard/scard
+gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DPCSCLITE=1 -Ismartcard/scard/ -I/usr/include/PCSC -I/usr/include/python2.7 -c smartcard/scard/helpers.c -o build/temp.linux-i686-2.7/smartcard/scard/helpers.o
+gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DPCSCLITE=1 -Ismartcard/scard/ -I/usr/include/PCSC -I/usr/include/python2.7 -c smartcard/scard/winscarddll.c -o build/temp.linux-i686-2.7/smartcard/scard/winscarddll.o
+gcc -pthread -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fPIC -DPCSCLITE=1 -Ismartcard/scard/ -I/usr/include/PCSC -I/usr/include/python2.7 -c smartcard/scard/scard_wrap.c -o build/temp.linux-i686-2.7/smartcard/scard/scard_wrap.o
+gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro build/temp.linux-i686-2.7/smartcard/scard/helpers.o build/temp.linux-i686-2.7/smartcard/scard/winscarddll.o build/temp.linux-i686-2.7/smartcard/scard/scard_wrap.o -o build/lib.linux-i686-2.7/smartcard/scard/_scard.so
+running install_lib
+copying build/lib.linux-i686-2.7/smartcard/scard/_scard.so -> /usr/local/lib/python2.7/dist-packages/smartcard/scard
+running install_egg_info
+Removing /usr/local/lib/python2.7/dist-packages/pyscard-1.6.16.egg-info
+Writing /usr/local/lib/python2.7/dist-packages/pyscard-1.6.16.egg-info

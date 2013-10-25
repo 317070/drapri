@@ -1,0 +1,9 @@
+<!DOCTYPE Workspace SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpw.dtd">
+<Workspace Version="10.0" VendorName="SlickEdit">
+	<Projects>
+		<Project File="pyscard.linux.vpj" />
+		<Project File="pyscard.macosX.darwin.vpj" />
+		<Project File="pyscard.vpj" />
+		<Project File="pyscard.win32.vpj" />
+	</Projects>
+</Workspace>

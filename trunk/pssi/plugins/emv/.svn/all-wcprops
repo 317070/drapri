@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/40/trunk/pssi/plugins/emv
+END
+currencies.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/31/trunk/pssi/plugins/emv/currencies.py
+END
+structures.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/26/trunk/pssi/plugins/emv/structures.py
+END
+interpreters.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/40/trunk/pssi/plugins/emv/interpreters.py
+END
+countries.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/31/trunk/pssi/plugins/emv/countries.py
+END
+final_types.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/31/trunk/pssi/plugins/emv/final_types.py
+END
+plugin.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/31/trunk/pssi/plugins/emv/plugin.py
+END
